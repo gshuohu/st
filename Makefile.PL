@@ -29,7 +29,7 @@ if ($opt{rename} and $opt{rename} =~ /^(\w+)$/) {
       if ($line !~ m{http.+/$DEFAULT_SCRIPT_NAME}) { # only if not in url
         $line =~ s/\b$DEFAULT_SCRIPT_NAME\b/$new_script_name/g;
       }
-      $found_pod = 1;
+      $found_pod = 2;
     }
     print $out $line;
   }
